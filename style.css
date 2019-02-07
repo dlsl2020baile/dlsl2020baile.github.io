@@ -1,0 +1,12 @@
+html, body{
+  font-family: Helvetica;
+}
+
+header{
+  background-color: Yellow;
+  text-align: center;
+}
+
+nav{
+ display: inline;
+}
