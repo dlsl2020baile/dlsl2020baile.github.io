@@ -1,0 +1,66 @@
+body{
+	background:url("M.jpg");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.wrap{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background: #fff;
+	padding:45px;
+	box-sizing: border-box;
+	border:1px solid black;
+	box-shadow: 0 5px 10px;
+}
+h1{
+	text-align: center;
+	color: #1ff2f2;
+	letter-spacing: 2px;
+}
+.wrap input{
+	padding: 5px;
+	margin-bottom:20px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #999;
+
+}
+.wrap input[type="submit"]{
+	border-radius: 25px;
+	height:40px;
+	cursor: pointer;
+	background: #1ff2f2;
+	margin-bottom: 0;
+	letter-spacing: 5px;
+	color: white;
+}
+.wrap input[type="submit"]:hover{
+	background: #1296ce;
+}
+.wrap form div{
+	position: relative;
+}
+.wrap form div label{
+	position: absolute;
+	top:3px;
+	pointer-events: none;
+	left: 0;
+	transition: .5s;
+	color:#17ed9e;
+}
+.wrap input:focus ~label,
+.wrap input:valid ~label
+{
+	left:0;
+	top: -20px;
+	color: #23c8dd;
+	font-size:12px;
+	font-weight: bold;
+}
